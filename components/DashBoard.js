@@ -17,7 +17,7 @@ function DashBoard() {
 
   const __startCamera = async () =>{
     const {status} = await Camera.requestPermissionsAsync()
-    console.log('cammemerere')
+
     if (status === 'granted') {
       // start the camera
       setStartCamera(true)
@@ -34,15 +34,16 @@ function DashBoard() {
       <View
         style={{
           flex: 1,
-          backgroundColor: '#fff',
+          backgroundColor: 'red',
           justifyContent: 'center',
-          alignItems: 'center'
+          alignItems: 'center',
+          width: "100%"
         }}
       >
         <TouchableOpacity
           onPress={__startCamera}
           style={styles.buttontext}
-        ><Text>Take photo</Text>
+        ><Text style={{color: 'white', fontSize: 20, }}>What am I eating ?</Text>
             </TouchableOpacity>
       </View>
         )}
@@ -58,13 +59,14 @@ const styles = StyleSheet.create({
       alignItems: 'center'
     },
     buttontext: {    
-      width: 130,
-      borderRadius: 4,
+      width: 300,
+      borderRadius: 50,
       backgroundColor: '#14274e',
       flexDirection: 'row',
       justifyContent: 'center',
       alignItems: 'center',
-      height: 40
+      height: 300,
+      color: 'white'
     },
     lottie: {
       width: 100,    height: 100, 

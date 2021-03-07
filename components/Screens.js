@@ -15,7 +15,7 @@ const MyStack = () => {
         <Stack.Screen
           name="Dashboard"
           component={DashBoard}
-          options={{ title: 'NutraScan' }}
+          options={{ title: 'NutroScan' }}
         />
         <Stack.Screen
           name="NutritionDisplayPage"
@@ -24,7 +24,7 @@ const MyStack = () => {
         <Stack.Screen
           name="Login"
           component={Landing}
-          options={{ title: 'NutraScan' }}
+          options={{ title: 'NutroScan' }}
         />
       </Stack.Navigator>
     </NavigationContainer>
